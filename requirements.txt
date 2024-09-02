@@ -2,7 +2,7 @@ asgiref==3.8.1
 astroid==3.1.0
 colorama==0.4.6
 dill==0.3.8
-Django==5.0.3
+Django
 isort==5.13.2
 mccabe==0.7.0
 pillow==10.2.0
