@@ -1,0 +1,206 @@
+{% load static %}
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en"><head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="keywords" content="​Wonderful tours, ​Backpacking Trips, ​Small group travel that&amp;apos;s good all over, ​Enjoy the perfect blend of adventure tours, ​Your adventure starts here, Tours Nature &amp;amp; Wildlife, Get in touch">
+  <meta name="description" content="">
+  <title>add your tour</title>
+  <link rel="stylesheet" href="{%static 'css/nicepage.css'%}" media="screen">
+<link rel="stylesheet" href="{%static 'css/addtour.css'%}" media="screen">
+
+  <script class="u-script" type="text/javascript" src="{%static 'js/jquery.js'%}" defer=""></script>
+  <script class="u-script" type="text/javascript" src="{%static 'js/nicepage.js'%}" defer=""></script>
+  <meta name="generator" content="Nicepage 6.7.3, nicepage.com">
+  <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+  <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Lato:100,100i,300,300i,400,400i,700,700i,900,900i">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script type="application/ld+json">{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "logo": "{% static 'css/images/rrr.png' %}",
+  "sameAs": [
+      "https://facebook.com/name",
+      "https://twitter.com/name",
+      "https://instagram.com/name"
+  ]
+}</script>
+  <meta name="theme-color" content="#478ac9">
+  <meta name="twitter:site" content="@">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Home">
+  <meta name="twitter:description" content="">
+  <meta property="og:title" content="Home">
+  <meta property="og:type" content="website">
+<meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
+<body data-path-to-root="./" data-include-products="false" class="u-body u-overlap u-overlap-contrast u-overlap-transparent u-xl-mode" data-lang="en"><header class="u-clearfix u-header u-header" id="sec-2a97"><div class="u-clearfix u-sheet u-sheet-1">
+      <a href="{% url 'home'%}" class="u-image u-logo u-image-1" data-image-width="1776" data-image-height="621">
+        <img src="{% static 'css/images/rrr.png'%}" class="u-logo-image u-logo-image-1">
+      </a>
+      <nav class="u-menu u-menu-hamburger u-offcanvas u-menu-1">
+        <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
+          <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
+            <svg class="u-svg-link" viewBox="0 0 24 24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
+            <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</g></svg>
+          </a>
+        </div>
+        <div class="u-custom-menu u-nav-container">
+          <ul class="u-nav u-spacing-20 u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-border-active-grey-90 u-border-hover-grey-75 u-button-style u-nav-link u-text-active-palette-2-dark-3 u-text-hover-palette-5-light-1 u-text-palette-1-light-1" href="{% url 'home' %}" style="padding: 10px 0px;">Home</a>
+{% comment %} </li><li class="u-nav-item"><a class="u-border-active-grey-90 u-border-hover-grey-75 u-button-style u-nav-link u-text-active-palette-2-dark-3 u-text-hover-palette-5-light-1 u-text-palette-1-light-1" href="home#ccarousel_d0e6" style="padding: 10px 0px;">About</a> {% endcomment %}
+</li><li class="u-nav-item"><a class="u-border-active-grey-90 u-border-hover-grey-75 u-button-style u-nav-link u-text-active-palette-2-dark-3 u-text-hover-palette-5-light-1 u-text-palette-1-light-1" href="{% url 'contact' %}" style="padding: 10px 0px;">Contact</a>
+</li>{% if not user.is_authenticated %}<li class="u-nav-item"><a class="u-border-active-grey-90 u-border-hover-grey-75 u-button-style u-nav-link u-text-active-palette-2-dark-3 u-text-hover-palette-5-light-1 u-text-palette-1-light-1" href="{% url 'login' %}" style="padding: 10px 0px;">Login</a>
+</li><li class="u-nav-item"><a class="u-border-active-grey-90 u-border-hover-grey-75 u-button-style u-nav-link u-text-active-palette-2-dark-3 u-text-hover-palette-5-light-1 u-text-palette-1-light-1" href="{% url 'signup' %}" style="padding: 10px 0px;">Signup</a>
+</li>{% endif %}<li class="u-nav-item"><a class="u-border-active-grey-90 u-border-hover-grey-75 u-button-style u-nav-link u-text-active-palette-2-dark-3 u-text-hover-palette-5-light-1 u-text-palette-1-light-1" href="{% url 'trips' %}" style="padding: 10px 0px;">Upcoming Trips</a>
+
+{% comment %} </li><li class="u-nav-item"><a class="u-border-active-grey-90 u-border-hover-grey-75 u-button-style u-nav-link u-text-active-palette-2-dark-3 u-text-hover-palette-5-light-1 u-text-palette-1-light-1" style="padding: 10px 0px;">Tips</a> {% endcomment %}
+</li>{% if user.is_authenticated %}<li class="u-nav-item"><a class="u-border-active-grey-90 u-border-hover-grey-75 u-button-style u-nav-link u-text-active-palette-2-dark-3 u-text-hover-palette-5-light-1 u-text-palette-1-light-1" style="padding: 10px 0px;">HI, {{user.username}}</a><div class="u-nav-popup"><ul class="u-nav u-unstyled u-v-spacing-9 u-nav-2"><li class="u-nav-item"><a class="u-active-palette-1-base u-button-style u-nav-link u-text-active-palette-1-light-1 u-text-hover-palette-3-dark-1" href="{% url 'hostingtrips' %}">Trips you're organizing</a>
+</li><li class="u-nav-item"><a class="u-active-palette-1-base u-button-style u-nav-link u-text-active-palette-1-light-1 u-text-hover-palette-3-dark-1" href="{% url 'joinedtrips' %}">Your Trips</a>
+</li><li class="u-nav-item"><a class="u-active-palette-1-base u-button-style u-nav-link u-text-active-palette-1-light-1 u-text-hover-palette-3-dark-1" href="{% url 'addtrip' %}" >Organize a Trip</a>
+
+</li><li class="u-nav-item"><a class="u-active-palette-1-base u-button-style u-nav-link u-text-active-palette-1-light-1 u-text-hover-palette-3-dark-1" href="{% url 'logout' %}">Logout</a>
+</li></ul>{% endif %}
+</div>
+</li></ul>
+        </div>
+        <div class="u-custom-menu u-nav-container-collapse">
+          <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+            <div class="u-inner-container-layout u-sidenav-overflow">
+              <div class="u-menu-close u-menu-close-1"></div>
+              <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-3"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'home' %}">Home</a>
+{% comment %} </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="home#carousel_d0e6">About</a> {% endcomment %}
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'contact' %}">Contact</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'login' %}">Login</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'signup' %}">Signup</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'trips' %}">Upcoming Trips</a>
+{% comment %} </li><li class="u-nav-item"><a class="u-button-style u-nav-link">Tips</a> {% endcomment %}
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">HI, username</a><div class="u-nav-popup"><ul class="u-nav u-unstyled u-v-spacing-9 u-nav-4"><li class="u-nav-item"><a class="u-button-style u-nav-link">Your Trips</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">You're Trips</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Organize a Trip</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Logout</a>
+</li></ul>
+</div>
+</li></ul>
+              </div>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          </div>
+        </nav>
+      </div></header>
+    <section class="u-clearfix u-image u-shading u-section-1" id="sec-8764" data-image-width="1400" data-image-height="933">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h2 class="u-align-center u-custom-font u-heading-font u-text u-text-palette-4-dark-2 u-text-1">ADD YOUR TOUR </h2>
+        <div class="u-form u-form-1">
+          <form method ="POST" action="{% url 'addtrip' %}" id= 'form' enctype="multipart/form-data" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" style="padding: 10px" source="email" name="form">
+            {% csrf_token %}
+            <div class="u-form-group u-form-name u-label-top">
+              <label for="title" class="u-label u-text-palette-3-base">Title</label>
+
+              <input type="text" placeholder="Enter title" id="title" name="title" class="u-border-3 u-border-black u-input u-input-rectangle u-none" required="">
+            </div>
+            <div class="u-form-group u-form-group u-label-top">
+              <label for="destination" class="u-label u-text-palette-3-base">Destination</label>
+              <input type="text" placeholder="Enter your Destination" id="destination" name="destination" class="u-border-3 u-border-black u-input u-input-rectangle u-none" required="">
+            </div>
+            <div class="u-form-group u-form-textarea u-label-top u-form-group-3">
+              <label for="description" id="description" class="u-label u-text-palette-3-base">description</label>
+              <textarea rows="4" cols="50" id="description" name="description" class="u-border-3 u-border-black u-input u-input-rectangle u-none" required="" placeholder="describe your trip a bit"></textarea>
+            </div>
+            <div class="u-form-date u-form-group u-label-top u-form-group-4">
+              <label for="Start_date" id ="start_date" class="u-label u-text-palette-3-base">From Date</label>
+              <input type="text" placeholder="MM/DD/YYYY" id="start_date" name="start_date" class="u-border-3 u-border-black u-input u-input-rectangle u-none" required="" data-date-format="mm/dd/yyyy">
+            </div>
+            <div class="u-form-date u-form-group u-label-top u-form-group-5">
+              <label for="end_date" id="end_date" class="u-label u-text-palette-3-base"> To Date</label>
+              <input type="text" placeholder="MM/DD/YYYY" id="end_date" name="end_date" class="u-border-3 u-border-black u-input u-input-rectangle u-none" required="" data-date-format="mm/dd/yyyy">
+            </div>
+            <div class="u-form-group u-form-select u-label-top u-form-group-6">
+              <label for="travel_mode" id="travel_mode" class="u-label u-text-palette-3-base">Mode of Transport</label>
+              <div class="u-form-select-wrapper">
+                <select id="travel_mode" name="travel_mode" class="u-border-3 u-border-black u-input u-input-rectangle u-none">
+                  <option value="AIRPLANE" data-calc="AIRPLANE">Airplane</option>
+                  <option value="CAR" data-calc="CAR">Car</option>
+                  <option value="TRAIN" data-calc="Train">Train</option>
+                  <option data-calc="BUS" value="BUS">Bus</option>
+                  <option data-calc="CRUISE" value="CRUISE">Cruise</option>
+                  <option data-calc="WALK" value="WALK">Walk</option>
+                  <option data-calc="MULTIPLE" value="MULTIPLE">Multiple</option>
+                </select>
+                <svg class="u-caret u-caret-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="fill:currentColor;" xml:space="preserve"><polygon class="st0" points="8,12 2,4 14,4 "></polygon></svg>
+              </div>
+            </div>
+            <div class="u-form-group u-form-select u-label-top u-form-group-7">
+              <label for="accommodation_type" id="accommodation_type" class="u-label u-text-palette-3-base">Accomodation Type</label>
+              <div class="u-form-select-wrapper">
+                <select id="accommodation_type" name="accommodation_type" class="u-border-3 u-border-black u-input u-input-rectangle u-none">
+                  <option value="HOTEL" data-calc="HOTEL">Hotel</option>
+                  <option value="HOSTEL" data-calc="HOSTEL">Hostel</option>
+                  {% comment %} <option value="Item 3">Item 3</option> {% endcomment %}
+                  <option data-calc="AIRBNB" value="AIRBNB">Airbnb</option>
+                  <option data-calc="CAMPSITE" value="CAMPSITE">Campsite</option>
+                  <option data-calc="OTHER" value="OTHER">Other</option>
+                </select>
+                <svg class="u-caret u-caret-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="fill:currentColor;" xml:space="preserve"><polygon class="st0" points="8,12 2,4 14,4 "></polygon></svg>
+              </div>
+            </div>
+            <div class="u-form-group u-label-top u-form-group-8">
+              <label for="estimated_budget" id="estimated_budget" class="u-label u-text-palette-3-base">Estimated Budget</label>
+              <input type="text" placeholder="type amount per person in EUR" id="estimated_budget" name="estimated_budget" class="u-border-3 u-border-black u-input u-input-rectangle u-none">
+            </div>
+            <div class="u-form-group u-form-partition-factor-2 u-label-top u-form-group-9">
+              <label for="image" id="image" class="u-label u-text-palette-3-base">image</label>
+              <input type="file" placeholder="an iamge will be usefull" id="image" name="image" class="u-border-3 u-border-black u-input u-input-rectangle u-none" accept="image/*" >
+            </div>
+            <div class="u-form-group u-form-number u-form-number-layout-number u-form-partition-factor-2 u-label-top u-form-group-10">
+              <label for="max_participants" id="max_participants" class="u-label u-text-palette-3-base">max people</label>
+              <div class="u-input-row" data-value="0">
+                <input value="0" min="0" max="50" step="1" type="number" placeholder="" id="max_participants" name="max_participants" class="u-border-3 u-border-black u-input u-input-rectangle u-none u-text-black">
+              </div>
+            </div>
+            <div class="u-align-center u-form-group u-form-submit">
+              <input type="submit" value="submit" class="u-form-control-hidden">
+              <button class="u-border-2 u-border-palette-2-light-1 u-btn u-btn-submit u-button-style u-none u-text-palette-3-light-1 u-btn-1">Submit</button>
+            </div>
+            <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
+            <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
+            <input type="hidden" value="" name="recaptchaResponse">
+            <input type="hidden" name="formServices" value="aaaecb15-b871-a9da-632e-6bdbdd50009b">
+          </form>
+        </div>
+      </div>
+    </section>
+    
+    
+    
+    <footer class="u-align-center u-clearfix u-footer u-palette-5-dark-3 u-footer" id="sec-ad58"><div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-small-text u-text u-text-variant u-text-1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Company address : dublin1&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br>Phone number: +3539283<br>Email address: wanderlust.gmail.com<br>Contact for inquiries 
+        </p>
+        <p class="u-text u-text-default u-text-2">FOLLOW us on</p>
+        <div class="u-social-icons u-spacing-10 u-social-icons-1">
+          <a class="u-social-url" title="facebook" target="_blank" href="https://facebook.com/name"><span class="u-icon u-social-facebook u-social-icon u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-4c75"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-4c75"><circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M73.5,31.6h-9.1c-1.4,0-3.6,0.8-3.6,3.9v8.5h12.6L72,58.3H60.8v40.8H43.9V58.3h-8V43.9h8v-9.2
+c0-6.7,3.1-17,17-17h12.5v13.9H73.5z"></path></svg></span>
+          </a>
+          <a class="u-social-url" title="twitter" target="_blank" href="https://twitter.com/name"><span class="u-icon u-social-icon u-social-twitter u-icon-2"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112.2 112.2" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-6502"></use></svg><svg class="u-svg-content" viewBox="0 0 112.2 112.2" x="0px" y="0px" id="svg-6502"><circle fill="currentColor" cx="56" cy="56" r="55"></circle><path fill="#FFFFFF" d="M63.9,51l22.4-24h-8.6L60.3,45.9L46.9,27H24l23.3,32.8L24,85h8.2L51,64.9L65.3,85H88L63.9,51z M55.3,60.2
+l-3.7-5.1L35.7,33.1h8.1l12.3,17.2l3.7,5.1l16.6,23.4h-7.8L55.3,60.2z"></path></svg></span>
+          </a>
+          <a class="u-social-url" title="instagram" target="_blank" href="https://instagram.com/name"><span class="u-icon u-social-icon u-social-instagram u-icon-3"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-1427"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-1427"><circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M55.9,38.2c-9.9,0-17.9,8-17.9,17.9C38,66,46,74,55.9,74c9.9,0,17.9-8,17.9-17.9C73.8,46.2,65.8,38.2,55.9,38.2
+z M55.9,66.4c-5.7,0-10.3-4.6-10.3-10.3c-0.1-5.7,4.6-10.3,10.3-10.3c5.7,0,10.3,4.6,10.3,10.3C66.2,61.8,61.6,66.4,55.9,66.4z"></path><path fill="#FFFFFF" d="M74.3,33.5c-2.3,0-4.2,1.9-4.2,4.2s1.9,4.2,4.2,4.2s4.2-1.9,4.2-4.2S76.6,33.5,74.3,33.5z"></path><path fill="#FFFFFF" d="M73.1,21.3H38.6c-9.7,0-17.5,7.9-17.5,17.5v34.5c0,9.7,7.9,17.6,17.5,17.6h34.5c9.7,0,17.5-7.9,17.5-17.5V38.8
+C90.6,29.1,82.7,21.3,73.1,21.3z M83,73.3c0,5.5-4.5,9.9-9.9,9.9H38.6c-5.5,0-9.9-4.5-9.9-9.9V38.8c0-5.5,4.5-9.9,9.9-9.9h34.5
+c5.5,0,9.9,4.5,9.9,9.9V73.3z"></path></svg></span>
+          </a>
+        </div>
+      </div></footer>
+    
+  
+</body></html>
