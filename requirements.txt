@@ -1,3 +1,6 @@
+pip>=24.0
+setuptools>=69.2.0
+wheel>=0.43.0
 asgiref==3.8.1
 astroid==3.1.0
 colorama==0.4.6
@@ -5,7 +8,7 @@ dill==0.3.8
 Django
 isort==5.13.2
 mccabe==0.7.0
-pillow==10.2.0
+pillow==10.4.0
 platformdirs==4.2.0
 pylint==3.1.0
 sqlparse==0.4.4
