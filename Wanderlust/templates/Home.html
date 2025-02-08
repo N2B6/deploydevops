@@ -1,12 +1,14 @@
+{% load static %}
 <!DOCTYPE html>
 <html style="font-size: 16px;" lang="en"><head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <meta name="keywords" content="​Wonderful tours, ​Backpacking Trips, ​Small group travel that&amp;apos;s good all over, ​Enjoy the perfect blend of adventure tours, ​Your adventure starts here, Tours Nature &amp;amp; Wildlife, Get in touch">
     <meta name="description" content="">
-    <title>Home</title>
-    <link rel="stylesheet" href="static/css/nicepage.css" media="screen">
-<link rel="stylesheet" href="static/css/Home.css" media="screen">
+    <title>Wanderlust</title>
+    <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'css/nicepage.css' %}" media="screen">
+    <link rel="stylesheet" href="{% static 'css/Home.css' %}" media="screen">
     <script class="u-script" type="text/javascript" src="static/js/jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="static/js/nicepage.js" defer=""></script>
     <meta name="generator" content="Nicepage 6.7.3, nicepage.com">
@@ -43,8 +45,8 @@
     <meta property="og:type" content="website">
   <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
   <body data-path-to-root="./" data-include-products="false" class="u-body u-overlap u-overlap-contrast u-overlap-transparent u-xl-mode" data-lang="en"><header class="u-clearfix u-header u-header" id="sec-2a97"><div class="u-clearfix u-sheet u-sheet-1">
-        <a href="{% url 'home'%}" class="u-image u-logo u-image-1" data-image-width="1776" data-image-height="621">
-          <img src="static/css/images/rrr.png" class="u-logo-image u-logo-image-1">
+        <a href="{% url 'home'%}" class="u-image u-logo u-image-1">
+          <img src="{% static 'images/favicon.ico' %}" class="u-logo-image u-logo-image-1">
         </a>
         <nav class="u-menu u-menu-hamburger u-offcanvas u-menu-1">
           <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
@@ -98,8 +100,9 @@
     <section class="u-align-center u-clearfix u-container-align-center u-image u-shading u-section-1" id="carousel_790c" data-image-width="1980" data-image-height="1243">
       <div class="u-clearfix u-sheet u-sheet-1">
         <h4 class="u-align-center u-text u-text-default u-text-1" data-animation-name="customAnimationIn" data-animation-duration="1500">travel PLANNERS</h4>
-        <img src="static/css/images/rrr.png" alt="" class="u-image u-image-contain u-image-default u-image-1" data-image-width="1776" data-image-height="621" data-animation-name="customAnimationIn" data-animation-duration="1500">
+        <img src="{% static 'images/favicon.ico' %}" alt="" class="u-image u-image-contain u-image-default u-image-1" data-image-width="1776" data-image-height="621" data-animation-name="customAnimationIn" data-animation-duration="1500">
         <h1 class="u-align-center u-text u-text-default u-text-2" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500"> Wonderful tours</h1>
+
         <h3 class="u-align-center u-text u-text-body-alt-color u-text-3" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">Let us take the stress out of travel planning so you can focus on making memories that will last a lifetime. Contact us today to start planning your next adventure! </h3>
         <a href="Home.html#carousel_fd2b" class="u-active-white u-align-center u-border-2 u-border-active-white u-border-hover-white u-border-white u-btn u-btn-round u-button-style u-hover-white u-none u-radius-50 u-btn-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">read more</a>
       </div>
@@ -170,8 +173,7 @@
                     <svg class="u-svg-link" preserveAspectRatio="none" viewBox="0 0 160 50" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-c9fe"></use></svg>
                     <svg class="u-svg-content" viewBox="0 0 160 50" x="0px" y="0px" id="svg-c9fe" style="enable-background:new 0 0 160 50;"><path d="M133,26.7c-13.9,9.7-25.8,9.7-39.8,0c-9.1-6.3-16.8-6.3-25.9,0c-13.8,9.6-25.1,9.6-38.9,0c-9.2-6.4-15.4-6.4-24.6,0L0,22
 	c11.2-7.8,20.6-8.1,32.2,0c11,7.6,19,8.5,31.3,0c11.6-8.1,22.4-7.7,33.5,0c11.4,8,20.3,8.3,32.2,0c11.6-8.1,19.2-8.1,30.8,0
-	l-3.8,4.7C146.9,20.2,142.3,20.2,133,26.7z M133,10.8c-13.9,9.7-25.8,9.7-39.8,0c-9.1-6.3-16.8-6.3-25.9,0
-	c-13.8,9.6-25.1,9.6-38.9,0c-9.2-6.4-15.4-6.4-24.6,0L0,6.1c11.2-7.8,20.6-8.1,32.2,0c11,7.6,19,8.5,31.3,0C75.1-2,85.9-1.6,97,6.1
+	l-3.8,4.7C146.9,20.2,142.3,20.2,133,26.7z M133,10.8c-13.9,9.7-25.8,9.7-39.8,0c-9.1-6.3-16.8-6.3-25.9,0c-13.8,9.6-25.1,9.6-38.9,0c-9.2-6.4-15.4-6.4-24.6,0L0,6.1c11.2-7.8,20.6-8.1,32.2,0c11,7.6,19,8.5,31.3,0C75.1-2,85.9-1.6,97,6.1
 	c11.4,8,20.3,8.3,32.2,0C140.8-2,148.4-2,160,6.1l-3.8,4.7C146.9,4.3,142.3,4.3,133,10.8z M32.2,38c11,7.6,19,8.5,31.3,0
 	c11.6-8.1,22.4-7.7,33.5,0c11.4,8,20.3,8.3,32.2,0c11.6-8.1,19.2-8.1,30.8,0l-3.8,4.7c-9.3-6.5-13.9-6.5-23.3,0
 	c-13.9,9.7-25.8,9.7-39.8,0c-9.1-6.3-16.8-6.3-25.9,0c-13.8,9.6-25.1,9.6-38.9,0c-9.2-6.4-15.4-6.4-24.6,0L0,38
@@ -364,7 +366,7 @@
       {% comment %} <h3 class="u-text u-text-3" data-animation-name="counter" data-animation-event="scroll" data-animation-duration="3000">1546</h3>
       <p class="u-text u-text-4">Trips completed by US </p> {% endcomment %}
       <div class="u-social-icons u-spacing-10 u-social-icons-1">
-        <a class="u-social-url" title="facebook" target="_blank" href="https://facebook.com/name"><span class="u-icon u-social-facebook u-social-icon u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-4c75"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-4c75"><circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M73.5,31.6h-9.1c-1.4,0-3.6,0.8-3.6,3.9v8.5h12.6L72,58.3H60.8v40.8H43.9V58.3h-8V43.9h8v-9.2
+        <a class="u-social-url" title="facebook" target="_blank" href="https://facebook.com/name"><span class="u-icon u-social-facebook u-social-icon u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-4c75"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-4c75"><circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M73.5,31.6h-9.1c-1.4,0-3.6,0.8-3.6,3.9v8.5h12.6L72,58.3H60.8v40.8H43.9V58.3h-8V42.4h8v-9.2
 c0-6.7,3.1-17,17-17h12.5v13.9H73.5z"></path></svg></span>
         </a>
         <a class="u-social-url" title="twitter" target="_blank" href="https://twitter.com/name"><span class="u-icon u-social-icon u-social-twitter u-icon-2"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112.2 112.2" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-6502"></use></svg><svg class="u-svg-content" viewBox="0 0 112.2 112.2" x="0px" y="0px" id="svg-6502"><circle fill="currentColor" cx="56" cy="56" r="55"></circle><path fill="#FFFFFF" d="M63.9,51l22.4-24h-8.6L60.3,45.9L46.9,27H24l23.3,32.8L24,85h8.2L51,64.9L65.3,85H88L63.9,51z M55.3,60.2
