@@ -27,6 +27,45 @@ The application follows a robust architecture where:
 3. Data is stored and retrieved from the database.
 4. CI/CD pipeline automates builds, tests, and deployments.
 
+```mermaid
+%%{init: {'theme': 'base', 'themeVariables': { 'fontSize': '16px', 'fontFamily': 'arial', 'primaryColor': '#009688', 'primaryTextColor': '#fff'}}}%%
+
+flowchart LR
+    A["<strong>Developer</strong>"] -->|"<strong>Git Push</strong>"| B["<strong>GitHub<br>Repository</strong>"]
+    B -->|"<strong>Triggers</strong>"| C["<strong>AWS<br>CodePipeline</strong>"]
+    C -->|"<strong>Source</strong>"| D["<strong>AWS<br>CodeBuild</strong>"]
+    
+    D -->|"<strong>Static<br>Analysis</strong>"| E1["<strong>Pylint</strong>"]
+    E1 -->|"<strong>Results</strong>"| F{"<strong>Quality<br>Gates</strong>"}
+    
+    F -->|"<strong>Pass</strong>"| G["<strong>AWS Elastic<br>Beanstalk</strong>"]
+    F -->|"<strong>Fail</strong>"| H["<strong>Build<br>Failed</strong>"]
+    
+    G -->|"<strong>Connect</strong>"| I["<strong>Amazon<br>RDS</strong>"]
+    G -->|"<strong>Store</strong>"| J["<strong>AWS<br>S3</strong>"]
+    G -->|"<strong>Serve</strong>"| K["<strong>Users</strong>"]
+    
+    %% SonarCloud continuous analysis during runtime
+    G -.->|"<strong>Continuous<br>Analysis</strong>"| E2["<strong>SonarCloud</strong>"]
+    E2 -.->|"<strong>Monitor</strong>"| G
+    
+    H -->|"<strong>Notify</strong>"| A
+    
+    %% Custom styles with enhanced visibility
+    classDef default fill:#f5f5f5,stroke:#333,stroke-width:2px;
+    classDef current fill:#a5d6a7,stroke:#2e7d32,stroke-width:3px;
+    classDef previous fill:#f8bbd0,stroke:#c2185b,stroke-width:3px;
+    classDef continuous fill:#fff59d,stroke:#f57f17,stroke-width:2px,stroke-dasharray: 5 5;
+    classDef decision fill:#bbdefb,stroke:#1565c0,stroke-width:3px;
+    classDef failure fill:#ffcdd2,stroke:#c62828,stroke-width:3px;
+    
+    class B,C,D,I,J current;
+    class E1 previous;
+    class E2 continuous;
+    class F decision;
+    class H failure;
+```
+
 ## Deployment Process
 1. Code is pushed to GitHub.
 2. AWS CodePipeline detects the changes and triggers the build process.
@@ -71,7 +110,7 @@ python manage.py test
 ### Steps in the Pipeline
 1. **Source Stage**: Detects changes in GitHub repository.
 2. **Build Stage**: AWS CodeBuild runs tests, linting (Pylint), and code analysis (SonarCloud).
-3. **Deploy Stage**: Successful builds are deployed to AWS Elastic Beanstalk.
+3. **Deploy Stage**: Successful builds are deployed to AWS Elastic Beanstalk using CodeDeploy.
 
 ### Static Code Analysis
 The CI/CD pipeline includes automated static analysis with Pylint:
