@@ -28,11 +28,17 @@ The application follows a robust architecture where:
 4. CI/CD pipeline automates builds, tests, and deployments.
 
 ```mermaid
-%%{init: {'theme': 'base', 'themeVariables': { 'fontSize': '16px', 'fontFamily': 'arial', 'primaryColor': '#009688', 'primaryTextColor': '#fff'}}}%%
+%%{init: {'theme': 'base', 'themeVariables': { 
+    'fontSize': '16px',
+    'fontFamily': 'arial',
+    'primaryColor': '#009688',
+    'primaryTextColor': '#fff',
+    'lineColor': '#81C784'
+}}}%%
 
 flowchart LR
     A["<strong>Developer</strong>"] -->|"<strong>Git Push</strong>"| B["<strong>GitHub<br>Repository</strong>"]
-    B -->|"<strong>Triggers</strong>"| C["<strong>AWS<br>CodePipeline</strong>"]
+    B -->|"<strong>Webhook triggers</strong>"| C["<strong>AWS<br>CodePipeline</strong>"]
     C -->|"<strong>Source</strong>"| D["<strong>AWS<br>CodeBuild</strong>"]
     
     D -->|"<strong>Static<br>Analysis</strong>"| E1["<strong>Pylint</strong>"]
@@ -42,7 +48,7 @@ flowchart LR
     F -->|"<strong>Fail</strong>"| H["<strong>Build<br>Failed</strong>"]
     
     G -->|"<strong>Connect</strong>"| I["<strong>Amazon<br>RDS</strong>"]
-    G -->|"<strong>Store</strong>"| J["<strong>AWS<br>S3</strong>"]
+    G -->|"<strong>Static<br>Files</strong>"| J["<strong>AWS<br>S3</strong>"]
     G -->|"<strong>Serve</strong>"| K["<strong>Users</strong>"]
     
     %% SonarCloud continuous analysis during runtime
@@ -51,13 +57,13 @@ flowchart LR
     
     H -->|"<strong>Notify</strong>"| A
     
-    %% Custom styles with enhanced visibility
-    classDef default fill:#f5f5f5,stroke:#333,stroke-width:2px;
-    classDef current fill:#a5d6a7,stroke:#2e7d32,stroke-width:3px;
-    classDef previous fill:#f8bbd0,stroke:#c2185b,stroke-width:3px;
-    classDef continuous fill:#fff59d,stroke:#f57f17,stroke-width:2px,stroke-dasharray: 5 5;
-    classDef decision fill:#bbdefb,stroke:#1565c0,stroke-width:3px;
-    classDef failure fill:#ffcdd2,stroke:#c62828,stroke-width:3px;
+    %% Custom styles with improved contrast
+    classDef default fill:#2d2d2d,stroke:#666,stroke-width:2px,color:#fff;
+    classDef current fill:#1a535c,stroke:#81C784,stroke-width:3px;
+    classDef previous fill:#6a1b9a,stroke:#BA68C8,stroke-width:3px;
+    classDef continuous fill:#424242,stroke:#81C784,stroke-width:2px,stroke-dasharray: 5 5;
+    classDef decision fill:#1565c0,stroke:#90CAF9,stroke-width:3px;
+    classDef failure fill:#c62828,stroke:#EF9A9A,stroke-width:3px;
     
     class B,C,D,I,J current;
     class E1 previous;
