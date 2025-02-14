@@ -148,7 +148,7 @@ The application handles static files differently between environments:
 ## Contact
 **Author:** Nipun Bakshi  
 **Email:** nipun.bakshi262001@gmail.com
-**LinkedIn:** [https://www.linkedin.com/in/nipunbakshi/]
+**LinkedIn:** https://www.linkedin.com/in/nipunbakshi/
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
