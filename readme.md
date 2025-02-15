@@ -47,7 +47,7 @@ flowchart TD
     F -->|"<strong>Pass</strong>"| G["<strong>AWS Elastic<br>Beanstalk</strong>"]
     F -->|"<strong>Fail</strong>"| H["<strong>Build<br>Failed</strong>"]
     
-    G -->|"<strong>Connect</strong>"| I["<strong>Amazon<br>RDS</strong>"]
+    G -->|"<strong>Connect</strong>"| I["<strong>AWS<br>RDS<br>MySQL</strong>"]
     G -->|"<strong>Static<br>Files</strong>"| J["<strong>AWS<br>S3</strong>"]
     G -->|"<strong>Serve</strong>"| K["<strong>Users</strong>"]
     
