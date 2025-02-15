@@ -36,7 +36,7 @@ The application follows a robust architecture where:
     'lineColor': '#81C784'
 }}}%%
 
-flowchart LR
+flowchart TD
     A["<strong>Developer</strong>"] -->|"<strong>Git Push</strong>"| B["<strong>GitHub<br>Repository</strong>"]
     B -->|"<strong>Webhook triggers</strong>"| C["<strong>AWS<br>CodePipeline</strong>"]
     C -->|"<strong>Source</strong>"| D["<strong>AWS<br>CodeBuild</strong>"]
@@ -124,8 +124,11 @@ The CI/CD pipeline includes automated static analysis with Pylint:
 - Detects missing docstrings, long lines, unused imports, etc.
 
 ## Deployment URL
-The application is deployed at:
-[https://deploydevops.onrender.com/](https://deploydevops.onrender.com/)
+<div align="left">
+
+<a href="https://deploydevops.onrender.com/" style="background-color: #4CAF50; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: all 0.3s ease;">🎯 Live Deployment 🚀</a>
+
+</div>
 
 ## Database Configuration
 The application uses different databases for development and production:
