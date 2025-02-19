@@ -1,6 +1,6 @@
 # 🌍 Wanderlust - Travel Application with CI/CD on AWS
 
-![Wanderlust Banner](https://via.placeholder.com/1200x400.png?text=Wanderlust+Travel+App) <!-- Add your own banner image here -->
+<!-- ![Wanderlust Banner](https://via.placeholder.com/1200x400.png?text=Wanderlust+Travel+App) Add your own banner image here -->
 
 ## 🚀 Overview
 Wanderlust is a modern web-based travel application built using Django, designed to help travel enthusiasts discover, plan, and manage trips efficiently. The application integrates CI/CD pipelines using AWS services for automated deployment, ensuring a smooth and scalable experience for users.
